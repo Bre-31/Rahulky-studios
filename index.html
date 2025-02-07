@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul ky Studios</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        
+        <div class="floating-text"><h1>RAHUL KY STUDIOS</h1></div>
+        <div class="category-list">
+            <div id="ebooks" style="cursor: pointer;"><h2>Ebooks</h2></div>
+            <div><a href="https://rahulky.itch.io/" target="_blank" style="color: white; text-decoration: none;"><h2>Games</h2></a></div>
+            <div id="services" style="cursor: pointer;"><h2>Services</h2></div>
+        </div>
+        <div class="image-container" id="imageContainer" style="display: none;">
+            <a class="image-link" href="https://www.amazon.in/dp/B0DVZMGXJF" target="_blank">
+                <img src="images/duckling (1).jpg" alt="Clickable Image 1">
+            </a>
+            <a class="image-link" href="https://www.amazon.in/dp/B0DVSVH98N" target="_blank">
+                <img src="images/create html games.jpg" alt="Clickable Image 2">
+            </a>
+            <a class="image-link" href="https://www.amazon.in/dp/B0DVRP67H5" target="_blank">
+                <img src="images/work of life Cover.jpg" alt="Clickable Image 3">
+            </a>
+            <a class="image-link" href="https://www.amazon.in/dp/B0DVQTZYZB" target="_blank">
+                <img src="images/White Blue Light Basic I Love You Instagram Story.jpg" alt="Clickable Image 3">
+            </a>
+        </div>
+        <div id="serviceContainer" style="display: none; text-align: center; color: white; margin-top: 20px;">
+            <p>Writing Blogs.</p>
+            <p>Articles.</p>
+            <p>Writing Invitation Cards.</p>
+            <p>Sending Emails.</p>
+            <p>Content Writing.</p>
+            <p>Copywriting.</p>
+            <p>Coding browser games.</p>
+            <p>Handyman.</p>
+
+            <br>
+            <p><a href="mailto:rahulky370@gmail.com" style="color: white; text-decoration: none;">Email me: <u>rahulky370@gmail.com</u></a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('ebooks').addEventListener('click', function() {
+            var imageContainer = document.getElementById('imageContainer');
+            imageContainer.style.display = imageContainer.style.display === 'none' ? 'flex' : 'none';
+        });
+    </script>   
+    
+    <script>
+        
+        document.getElementById('services').addEventListener('click', function() {
+            var serviceContainer = document.getElementById('serviceContainer');
+            serviceContainer.style.display = serviceContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+    
+    
+</body>
+</html>
